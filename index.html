@@ -1,41 +1,72 @@
 <html>
 
 <head>
+
     <title>O Προτος Παγκοσμιος Πολεμος</title>
 
     <script>
-        const stackImage = (url) => {
+
+        const stackCountryFlag = (url) => {
+
             const elem = document.createElement("img");
+
             elem.setAttribute("src", url);
+
             elem.setAttribute("height", "150");
+
             elem.setAttribute("width", "200");
+
+            elem.setAttribute("style", "display: inline-block; margin-right: 10px;");
+
             document.getElementById("main").appendChild(elem);
+
         }
 
-        const images = [
+        const country_flags = [
+
             "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png",
+
             "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Italy_%281861-1946%29_crowned.svg/255px-Flag_of_Italy_%281861-1946%29_crowned.svg.png",
+
             "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Germany_%281867%E2%80%931918%29.svg/2560px-Flag_of_Germany_%281867%E2%80%931918%29.svg.png",
+
             "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg/1200px-Flag_of_Great_Britain_%281707%E2%80%931800%29.svg.png"
+
         ];
 
-        for (const image of images) {
-            stackImage(image);
+        window.onload = () => {
+
+            for (const image of country_flags) {
+
+                stackCountryFlag(image);
+
+            }
+
         }
+
     </script>
+
 </head>
 
-<body style="background-color:lightblue; font-size: 20px;">
+<body style="background-color: lightblue; font-size: 20px;">
+
     <p>
+
     <h1>
+
         <center>O Προτως Παγκοσμιος Πολεμος</center>
+
     </h1>
+
     </p>
+
     <h1>Οι Xωρες Που Σημετιχαν</h1>
+
     <br>
+
     <br>
-    <div id="main" style="display:left; align-items: center; justify-content: center;">
-    </div>
+
+    <div id="main" style="display: left; align-items: center; justify-content: center;"></div>
 
 </body>
 
