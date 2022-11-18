@@ -6,7 +6,7 @@
     <script>
         const stackImage = (url) => {
             const elem = document.createElement("img");
-            elem.src = url;
+            elem.setAttribute("src", url);
             elem.setAttribute("height", "150");
             elem.setAttribute("width", "200");
             document.getElementById("main").appendChild(elem);
