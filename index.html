@@ -2,6 +2,27 @@
 
 <head>
     <title>O Προτος Παγκοσμιος Πολεμος</title>
+
+    <script>
+        const stackImage = (url) => {
+            const elem = document.createElement("img");
+            img.src = url;
+            img.setAttribute("height", "150");
+            img.setAttribute("width", "200");
+            document.getElementById("mani").appendChild(elem);
+        }
+
+        const images = [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Italy_%281861-1946%29_crowned.svg/255px-Flag_of_Italy_%281861-1946%29_crowned.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Germany_%281867%E2%80%931918%29.svg/2560px-Flag_of_Germany_%281867%E2%80%931918%29.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg/1200px-Flag_of_Great_Britain_%281707%E2%80%931800%29.svg.png"
+        ];
+
+        for (const image of images) {
+            stackImage(image);
+        }
+    </script>
 </head>
 
 <body style="background-color:lightblue; font-size: 20px;">
@@ -13,14 +34,9 @@
     <h1>Οι Xωρες Που Σημετιχαν</h1>
     <br>
     <br>
-    <div style="display:left; align-items: center; justify-content: center;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png"
-            width="200" height="150"></img>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Italy_%281861-1946%29_crowned.svg/255px-Flag_of_Italy_%281861-1946%29_crowned.svg.png"
-            width="200" height="150"></img>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Germany_%281867%E2%80%931918%29.svg/2560px-Flag_of_Germany_%281867%E2%80%931918%29.svg.png"
-            width="200" height="150"></img>
+    <div id="main" style="display:left; align-items: center; justify-content: center;">
     </div>
+
 </body>
 
 </html>
